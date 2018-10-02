@@ -35,9 +35,42 @@ body{
   margin-top: auto;
 }
 
-.movie__rating svg{
-  
+
+.movie__rating .fas{  
   width: 25px;
   fill: gold;
-
 }
+
+.movie__left{
+  display: inline-block;
+  float: left;
+}
+.movie__right {
+  display: inline-block;
+  margin-left: 20px;
+}
+/*медіазапит CSS*/
+/*@media - ключове слово*/
+/*(тут пишем правило спрацювання)*/
+@media ( min-width: 560px ) {
+  .movie{
+    display: flex;
+    /*display: flex; - 
+    вмикає flex поведінку, ставить дочірні блоки в ряд,
+     робить їх по ширині свого контенту*/
+  }
+  .movie__poster{
+    max-width: 200px
+    /*обмежує блок з постером по ширині*/
+  }
+  .movie__description{
+    padding-left: 20px;
+    flex: 1 auto;
+    /*flex: 1 auto; - 
+    заставляє цей блок тягнутися 
+    по всій доступній йому ширині*/
+  }
+}
+
+
+
