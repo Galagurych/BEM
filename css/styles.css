@@ -36,11 +36,11 @@ body{
 }
 
 
-.movie__rating .fas{  
+.movie__rating svg{
   width: 25px;
   fill: gold;
+  margin-left: 10px;  
 }
-
 .movie__left{
   display: inline-block;
   float: left;
@@ -53,23 +53,105 @@ body{
 /*@media - ключове слово*/
 /*(тут пишем правило спрацювання)*/
 @media ( min-width: 560px ) {
-  .movie{
+  .movie, .profile{
     display: flex;
     /*display: flex; - 
     вмикає flex поведінку, ставить дочірні блоки в ряд,
      робить їх по ширині свого контенту*/
   }
-  .movie__poster{
+  .movie__poster {
     max-width: 200px
     /*обмежує блок з постером по ширині*/
   }
-  .movie__description{
+  .movie__description, .movie__info, .profile__information{
     padding-left: 20px;
     flex: 1 auto;
     /*flex: 1 auto; - 
     заставляє цей блок тягнутися 
     по всій доступній йому ширині*/
   }
+}
+
+.movie__title{
+  font-size: 40px;
+  font-weight: bold;  
+  margin: 20px;
+}
+.movie__info{
+  padding-top: 10px;
+}
+.movie__description{
+  padding-top: 15px;
+  font-size: 15px;
+}
+.movie__description span{
+  font-size: 20px;
+  font-weight: bold;
+  display: block; 
+}
+.movie__info span{
+  font-weight: bold;
+}
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  max-width: 400px;
+  height: 40px;
+  background-color: #FCEA23;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+}
+.btn_green{
+  background-color: #67E452;
+}
+.btn_blue{
+  background-color: #6AE9D3;
+}
+.movie__options{
+  text-align: center;
+}
+.profile{
+  margin-top: 30px;
+}
+.profile__avatar img{
+  width: 250px;
+  border-radius: 15px;
+}
+.profile__name{
+  font-size: 30px;
+  font-weight: bold;
+}
+.m-t-20{
+  margin-top: 20px;
+  font-size: 16px;
+}
+ .profile__information{
+  position: relative;
+}
+.profile__add{
+  display: inline-block;
+  position: absolute;
+  left: 90%;
+  top: 0%;
+  width: 200px;
+}
+
+.profile__add svg{
+  max-width: 20px;
+}
+.btn_red{
+  margin: 0;
+  padding: 10px;
+  background: #FD8D8D;
+}
+ .btn svg {
+  fill: #fff;
+  display: inline-block;
+  width: 50px;
 }
 
 
