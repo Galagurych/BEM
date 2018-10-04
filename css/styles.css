@@ -39,6 +39,10 @@ body{
    background-color: #A8FDEC;
    padding: 20px;
 }
+.movie__title a{
+  text-decoration: none;
+  color: #1E07FD;
+}
 
 .movie__rating{
   display: flex;  
@@ -73,9 +77,10 @@ body{
      робить їх по ширині свого контенту*/
   }
   .movie__poster {
-    max-width: 200px
+    max-width: 360px;
     /*обмежує блок з постером по ширині*/
   }
+
   .movie__description, .movie__info, .profile__information{
     padding-left: 20px;
     flex: 1 auto;
@@ -140,6 +145,14 @@ body{
 .profile__name{
   font-size: 30px;
   font-weight: bold;
+}
+.profile__skills a{
+  text-decoration: none;
+  color: #250BEB;
+}
+.profile__name a{
+  text-decoration: none;
+  color: #F91313;
 }
 .m-t-20{
   margin-top: 20px;
