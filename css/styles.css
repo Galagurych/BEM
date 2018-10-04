@@ -35,6 +35,11 @@ body{
   margin-top: auto;
 }
 
+.movie{
+   background-color: #A8FDEC;
+   padding: 20px;
+}
+
 .movie__rating{
   display: flex;  
   justify-content: center;
@@ -49,10 +54,13 @@ body{
 .movie__left{
   display: inline-block;
   float: left;
+  padding: 20px;
+  background-color: #FACBDF;
 }
 .movie__right {
   display: inline-block;
-  margin-left: 20px;
+  padding: 20px;
+  background-color: #A6F6B5;
 }
 /*медіазапит CSS*/
 /*@media - ключове слово*/
@@ -80,7 +88,9 @@ body{
 .movie__title{
   font-size: 40px;
   font-weight: bold;  
-  margin: 20px;
+  padding: 20px;
+
+  text-align: center; 
 }
 
 .movie__info{
@@ -135,14 +145,18 @@ body{
   margin-top: 20px;
   font-size: 16px;
 }
+.profile {
+  background-color: #F6FC96;
+  padding: 20px 10px;
+}
  .profile__information{
   position: relative;
 }
 .profile__add{
   display: inline-block;
   position: absolute;
-  left: 85%;
-  top: 0%;
+  top: 0;
+  right: 0;
   min-width: 85px;
 }
 
@@ -160,7 +174,8 @@ body{
   width: 50px;
 }
 hr{
-  margin-top: 50px;
+  margin: 20px 0;
+  
 }
 
 
